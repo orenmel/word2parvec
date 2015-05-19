@@ -158,7 +158,7 @@ You can use the following runtime arguments:
 
 	--excluderef excludes the given context from the target contexts average. This is recommended when using clustered subvecs (3.c.(v)).
 
-	--lemmatize can be used to convert the parvec to lemmatized form (useful, for istance, when evaluating against a gold standard of lemmas). 
+	--lemmatize can be used to convert the parvec to lemmatized form. This is useful, for instance, when evaluating against a lemmatized gold standard, such as the SemEval 2007 Lexical Substitution Task. 
 	When using this option the target_name in TEST should be in the form of <string>.POS where POS is a wordnet part-of-speech identifier (ADJ, ADV, NOUN, VERB = 'a', 'r', 'n', 'v').
 	A 4th line will be included in the output:
 	PARLEMVEC <tab> parlem1 <space> weight1 <tab> parlem2 <space> weight2 <tab> ...
