@@ -4,14 +4,15 @@ WORD2PARVEC TOOLKIT		Oren Melamud, 2015
 NOTE: The word2parvec toolkit is provided 'AS IS' with no warranty whatsoever.
 
 word2parvec is a toolkit that learns paraphrase vector (parvec) representations for word meanings in context.
-The model is described in the following paper:
+The model is described in the following paper (please cite if using this toolkit):
+
 Oren Melamud, Ido Dagan, Jacob Goldberger. Modeling Word Meaning in Context with Substitute Vectors. NAACL, 2015.
-Please cite this paper if using this toolkit.
 
 This readme file explains how to use the toolkit.
 The procedure includes the following steps:
 
 SETUP
+
 	1. Preprocessing the learning corpus
 	2. Learning an n-gram language model from the corpus
 	3. Extracting sentential contexts from the corpus for all target words
@@ -19,9 +20,11 @@ SETUP
 		b. Sampling target words contexts
 		c. Generating substitute vector (subvec) representations for contexts
 INFERENCE
+
 	4. Generating parvecs for target words in sentential context
 
 The toolkit also includes:
+
 	5. A simple Wordnet-based pseudoword generator
 	6. An application that evaluates subvec/bow/cbow context similarity measures using pseudowords
 	
